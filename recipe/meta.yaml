@@ -29,7 +29,7 @@ test:
     - mpi4py
     - mpi4py.MPI
   commands:
-    - mpirun -np 2 python "from mpi4py.MPI import COMM_WORLD as comm; print(comm.rank)"
+    - mpirun -np 2 python -c "from mpi4py.MPI import COMM_WORLD as comm; print(comm.rank)"
 
 about:
   home: http://pythonhosted.org/mpi4py/
